@@ -2,13 +2,18 @@
 -- TODO: 테스트용이지만 비밀번호가 노출된 데이터 세팅. 개선하는 것이 좋을 지 고민해 보자.
 insert into user_account (user_id, user_password, nickname, email, memo, created_at, created_by, modified_at,
                           modified_by)
-values ('uniquehan', 'asdf1234','uniquehan','uniquehan@mail.com', 'I am uniquehan.', now(),'uniquehan', now(),
+values ('uniquehan', '{noop}asdf1234','uniquehan','uniquehan@mail.com', 'I am uniquehan.', now(),'uniquehan', now(),
        'uniquehan');
 
 insert into user_account (user_id, user_password, nickname, email, memo, created_at, created_by, modified_at,
                           modified_by)
-values ('uniquehan2', 'asdf1234','uniquehan2','uniquehan2@mail.com', 'I am uniquehan2.', now(),'uniquehan2', now(),
+values ('uniquehan2', '{noop}asdf1234','uniquehan2','uniquehan2@mail.com', 'I am uniquehan2.', now(),'uniquehan2', now(),
        'uniquehan2');
+
+insert into user_account (user_id, user_password, nickname, email, memo, created_at, created_by, modified_at,
+                          modified_by)
+values ('test', '{noop}test','test','test@mail.com', 'I am test.', now(),'test', now(),
+        'test');
 
 -- 123 게시글
 insert into article (user_id, title, content, hashtag, created_by, modified_by, created_at, modified_at)
