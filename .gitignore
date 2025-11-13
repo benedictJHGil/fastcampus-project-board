@@ -226,4 +226,15 @@ gradle-app.setting
 # Java heap dump
 *.hprof
 
+### vscode ###
+.vscode
+
+### Env files ###
+.env
+.env.*
+
+# Java / IDE build output
+/bin/
+target/
+
 # End of https://www.toptal.com/developers/gitignore/api/java,gradle,intellij+all,windows,macos,visualstudiocode
